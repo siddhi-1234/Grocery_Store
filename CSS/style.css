@@ -1,6 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
 
+:root    /* Used to apply to whole file */
+{
+    --green: green;      /* -- indicates variable which is assigned color */
+    --black: black;
+    --Light-color: #666;
+    --box-shadow: 0 .1rem 1rem rgba(0,0,0.1) ;
+    --border: 2rem solid rgba(0,0,0.1);
+    --outline: .1rem solid rgba(0,0,0.1);
+}
+
 *
 {
     font-family: 'Poppins', sans-serif;
@@ -11,5 +21,54 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;    /* hides any content that overflows the horizontal boundaries of the element */
+    scroll-behavior: smooth;  /* enables smooth scrolling animation */
+    scroll-padding-top: 7rem;  /* used to add space at the top of the scroll position */
+}
+
+body
+{
+    background: #eee ;
+}
+
+.header      /* top most header containing navbar */
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;   /* used to create a flex container, enabling flexible and responsive layouts */
+    align-items: center;
+    justify-content: space-between;  /* first item at the start, the last item at the end, and equal space between the remaining items. */
+    padding: 2rem 9%;  /* 2rem for top & bottom, 9% for left and right */
+    background: #fff;
+    box-shadow: var(--box-shadow);  /* Var box-shadow is used */
+}
+
+.header .logo  /* Selects any element with class logo that is a descendant of an element with class header. */
+{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.header .logo i
+{
+    color: var(--green);
+}
+
+.header .navbar a
+{
+   font-size: 1.7rem;
+   margin: 0 1rem;
+   color: var(--black);
+}
+
+.header .navbar a:hover
+{
+    color: var(--green);
 }

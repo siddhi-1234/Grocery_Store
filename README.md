@@ -6,3 +6,6 @@
  2. Then copy font awesome icon 4 link and link the style.css file to be used in index.html
  3. Then create header section and first create basket icon from font awesome 4 icon
  4. Then create navbar for each link required
+ 5. Style the page in style.css file
+ 6. Create root style which will be aplicable to whole index.html file and declare variables using --
+ 
