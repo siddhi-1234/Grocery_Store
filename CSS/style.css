@@ -72,3 +72,29 @@ body
 {
     color: var(--green);
 }
+
+.header .icons div
+{
+    border: 0px solid;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .icons div:hover
+{
+    background: var(--green);
+    color: white;
+}
+
+#menu-btn  /* For = icon to hide */
+{
+    display: none;
+}
