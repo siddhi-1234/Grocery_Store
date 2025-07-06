@@ -9,3 +9,4 @@
  5. Style the page in style.css file
  6. Create root style which will be aplicable to whole index.html file and declare variables using --
  7. Now create icons for search,shopping in navbar and style them
+ 8. Create cart for shopping and style it
