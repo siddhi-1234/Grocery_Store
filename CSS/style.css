@@ -47,6 +47,7 @@ body
     border-radius: .5rem;
     color: var(--black);
     cursor: pointer;
+    background: none;
 }
 
 .btn:hover
@@ -116,6 +117,12 @@ body
 #menu-btn  /* For = icon to hide */
 {
     display: none;
+}
+
+.header .navbar.active
+{
+    right: 2rem;
+    transition: .4s linear;
 }
 
 .header .search-form 
@@ -246,3 +253,114 @@ header .shopping-cart.active
     text-align: center;
     margin: 1rem 0;
 }
+
+/* login form */
+.header .login-form
+{
+    border: 0px solid;
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    width: 35rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.header .login-form.active
+{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .login-form h3
+{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.header .login-form .box
+{
+    border: 0px solid;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    width: 100%;
+}
+
+.header .login-form p
+{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: var(--Light-color);
+}
+
+.header .login-form p a
+{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 991px)
+{
+    html
+    {
+    font-size: 55%; 
+    }
+    .header
+    {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #menu-btn  /* For = icon to hide */
+{
+    display: inline-block;
+}
+    .header .navbar
+    {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+    .header .navbar a
+    {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+@media (max-width: 450px)
+{
+    html
+    {
+    font-size: 50%; 
+    }
+}
+

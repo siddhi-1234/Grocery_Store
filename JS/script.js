@@ -7,7 +7,10 @@
     
  document.querySelector('#search-btn').onclick =()=>   /* finds the element on the page that has id="search-btn" */
  {
-    searchForm.classList.toggle('active');  /* .classList is a property that represents the list of classes on that element */
+    searchForm.classList.toggle('active');  /* .classList is a property that represents the list of classes on that element */ 
+   shoppingCart.classList.remove('active');
+   loginForm.classList.remove('active');
+    navbar.classList.remove('active'); 
  }
 
  /* For shopping cart */
@@ -15,5 +18,41 @@
     
  document.querySelector('#cart-btn').onclick =()=>  
  {
-    shoppingCart.classList.toggle('active');  
+     
+   shoppingCart.classList.toggle('active');
+   searchForm.classList.remove('active');
+   loginForm.classList.remove('active');
+    navbar.classList.remove('active');   
+ }
+
+ /* For login form */
+  let loginForm=document.querySelector('.login-form');  
+    
+ document.querySelector('#login-btn').onclick =()=>  
+ {
+    loginForm.classList.toggle('active'); 
+    shoppingCart.classList.remove('active');
+   searchForm.classList.remove('active');
+    navbar.classList.remove('active'); 
+ }
+
+ /* For navbar media queries */
+  let navbar=document.querySelector('.navbar');  
+    
+ document.querySelector('#menu-btn').onclick =()=>  
+ {
+    navbar.classList.toggle('active');  
+    shoppingCart.classList.remove('active');
+   searchForm.classList.remove('active');
+   loginForm.classList.remove('active');
+    
+ }
+
+ window.onscroll =()=>  
+ {
+   searchForm.classList.remove('active'); 
+   shoppingCart.classList.remove('active');
+   loginForm.classList.remove('active');
+    navbar.classList.remove('active'); 
+    
  }
