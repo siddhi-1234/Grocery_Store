@@ -36,6 +36,12 @@ body
     background: #eee ;
 }
 
+/* For banner section */
+section
+{
+    padding: 2rem 9%;
+}
+
 /* For all buttons */
 .btn
 {
@@ -308,6 +314,45 @@ header .shopping-cart.active
     text-decoration: underline;
 }
 
+.home
+{
+    border: 0px solid;
+    display: flex;
+    justify-content: center;
+    background: url(../Image/banner.png) no-repeat;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    padding-top: 25rem;
+    padding-bottom: 10rem;
+}
+
+.home .content
+{
+    border: 0px solid;
+    text-align: center;
+    width: 45rem;
+}
+
+.home .content h3
+{
+    color: var(--black);
+    font-size: 2rem;
+}
+
+.home .content h3 span
+{
+    color: var(--green);
+    
+}
+
+.home .content p
+{
+    color: var(--Light-color);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
 
 
 
@@ -330,14 +375,27 @@ header .shopping-cart.active
     {
         padding: 2rem;
     }
+    section
+    {
+        padding: 2rem;
+    }
+    .home .content
+    {
+        width: 45rem;
+    }
 }
 
 @media (max-width: 768px)
 {
-    #menu-btn  /* For = icon to hide */
+    #menu-btn  
 {
     display: inline-block;
 }
+
+  .header .search-form
+  {
+    width: 90%;
+  }
     .header .navbar
     {
         position: absolute;
@@ -354,6 +412,10 @@ header .shopping-cart.active
         margin: 2rem 2.5rem;
         display: block;
     }
+    .home .content
+    {
+        width: 45rem;
+    }
 }
 
 @media (max-width: 450px)
@@ -361,6 +423,10 @@ header .shopping-cart.active
     html
     {
     font-size: 50%; 
+    }
+    .home .content
+    {
+        width: 45rem;
     }
 }
 
