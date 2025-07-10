@@ -12,4 +12,5 @@
  8. Create cart for shopping and style it
  9. Now create login form for user icon in navbar
  10. Add media queries
- 11. Now create banner section after header section
+ 11. Now create banner section after header section and style it
+ 12. Now create features section after banner and style it
