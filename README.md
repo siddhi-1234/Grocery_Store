@@ -14,3 +14,4 @@
  10. Add media queries
  11. Now create banner section after header section and style it
  12. Now create features section after banner and style it
+ 13. Now create products section after feature and style it
