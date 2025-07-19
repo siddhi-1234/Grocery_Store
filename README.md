@@ -19,3 +19,4 @@
  15. Now create customer reviews and style it
  16. Now create blogs section and style it
  17. Now create footer section and style it
+ 18. Now we will add icon to title bar
